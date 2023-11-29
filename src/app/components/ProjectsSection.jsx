@@ -7,37 +7,37 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Curso básico Phyton",
     description: "Project 1 description",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["Todos", "Certificaciones"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Apis con .NET",
     description: "Project 2 description",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    tag: ["Todos", "Certificaciones"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "Comprehensions, lambdas y manejo de herrores",
     description: "Project 3 description",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    tag: ["Todos", "Certificaciones"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "Programación orientada a objetos",
     description: "Project 4 description",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["Todos", "Certificaciones"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -62,7 +62,7 @@ const projectsData = [
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Todos");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -82,23 +82,23 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+        Mis certificaciones y proyectos
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
+          name="Todos"
+          isSelected={tag === "Todos"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Proyectos"
+          isSelected={tag === "Proyectos"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Certificaciones"
+          isSelected={tag === "Certificaciones"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
