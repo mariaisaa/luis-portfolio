@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-green-600">
               Hola!, soy{" "}
             </span>
             <br></br>
@@ -24,7 +24,7 @@ const HeroSection = () => {
               sequence={[
                 "Luis Aguilera",
                 1000,
-                "Estudiante de ingenieria de sistemas",
+                "Estudiante de ingeniería de sistemas",
                 1000,
               ]}
               wrapper="span"

@@ -22,7 +22,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Ingenieria de sistemas, Universidad El Bosque (en formación)</li>
+        <li>Ingeniería de sistemas, Universidad El Bosque (en formación)</li>
         
       </ul>
     ),
@@ -45,9 +45,9 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about.gif" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre mí</h2>
           <p className="text-base lg:text-lg">
-          Soy estudiante de ingenieria de sistemas, apasionado por explorar los mundos de la tecnología. 
+          Soy estudiante de ingeniería de sistemas, apasionado por explorar los mundos de la tecnología. 
           cuento con conocimientos en Python, .NET, HTML y CSS. 
           Mi entusiasmo me impulsa a embarcarme en proyectos tecnológicos desafiantes. 
           Disfruto trabajar en equipo y tengo la capacidad de absorber conocimientos rápidamente.
